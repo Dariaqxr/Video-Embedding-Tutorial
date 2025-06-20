@@ -1,0 +1,252 @@
+/* Fonts & Base - (Keep these as they are, they are good) */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  color: #333;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* Header - (Keep these as they are, they are good) */
+header {
+  text-align: center;
+  padding: 60px 30px;
+  background: linear-gradient(to right, #00acc1, #ec407a);
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+  font-size: 1.35rem;
+  opacity: 0.95;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Navigation - (Keep these as they are, they are good) */
+.main-nav {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px 0;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.main-nav ul { /* Added styling for the ul inside nav */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Makes the list items horizontal */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: center;
+}
+
+.main-nav li {
+    margin: 5px 15px; /* Spacing between nav items */
+}
+
+.main-nav a {
+  color: #00acc1;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  transition: color 0.3s ease, transform 0.2s ease-in-out; /* Adjusted transform transition for smoother bounce */
+}
+
+.main-nav a:hover {
+  color: #ec407a;
+  transform: translateY(-2px);
+}
+
+/* Steps */
+.step {
+  background: white;
+  padding: 25px; /* Reverted to original padding */
+  border-radius: 15px; /* Reverted to original border-radius */
+  margin: 30px 0; /* Reverted to original margin */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* Reverted to original shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Keep box-shadow transition for smoothness */
+  position: relative;
+}
+
+.step:hover {
+  transform: scale(1.01); /* Reverted to original scale effect */
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15); /* Slightly enhanced shadow on hover for better visual pop */
+}
+
+.step h2 {
+  margin-top: 0;
+  color: #ec407a;
+  font-size: 2rem; /* Keep larger font size for headings */
+  border-bottom: 2px solid #fce4ec; /* Keep subtle separator */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.step p {
+  margin-bottom: 15px;
+}
+
+.step img {
+  max-width: 100%;
+  border-radius: 10px; /* Reverted to original border-radius */
+  margin-top: 10px; /* Reverted to original margin */
+  border: 2px solid #fce4ec; /* Reverted to original border thickness */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Keep shadow for images */
+}
+
+a {
+  color: #00acc1;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ec407a;
+}
+
+/* Code block - (Keep these as they are, they are good) */
+pre {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border: 1px solid #eee;
+  box-shadow: inset 0 1px 5px rgba(0,0,0,0.05);
+}
+
+code {
+  color: #555;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+/* Video embed */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 15px; /* Reverted to original border-radius */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Reverted to original shadow */
+  margin-top: 25px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Footer - (Keep these as they are, they are good) */
+footer {
+  text-align: center;
+  margin: 70px 0 30px;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+footer .container {
+    padding-bottom: 0; /* Adjust container padding for footer specific content if needed */
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeInUp 0.8s ease-out; /* Reverted to original animation duration and timing, removed 'forwards' if you prefer it to reset */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Reverted to original translateY value */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments - (Keep these as they are, they are good) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .step {
+    padding: 25px;
+    margin: 25px 0;
+  }
+
+  .step h2 {
+    font-size: 1.7rem;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .main-nav a {
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 40px 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .step {
+    padding: 20px;
+  }
+
+  .step h2 {
+    font-size: 1.5rem;
+  }
+}

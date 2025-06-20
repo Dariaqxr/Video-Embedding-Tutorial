@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Embed a YouTube Video on Your Website - A Step-by-Step Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Learn how to easily embed YouTube videos into your website with this comprehensive step-by-step guide, complete with screenshots and code examples." />
+  <meta name="keywords" content="embed YouTube video, HTML embed, website video, add video to website, YouTube guide" />
+  <meta property="og:title" content="How to Embed a YouTube Video on Your Website" />
+  <meta property="og:description" content="Learn how to easily embed YouTube videos into your website with this comprehensive step-by-step guide, complete with screenshots and code examples." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="YOUR_WEBSITE_URL_HERE" />
+  <meta property="og:image" content="images/social-share-image.jpg" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="fade-in">
+    <div class="container">
+      <h1>How to Embed a YouTube Video on Your Website</h1>
+      <p class="subtitle">Follow this simple, step-by-step guide with clear screenshots and code to successfully add videos to your site.</p>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="container">
+      <ul>
+        <li><a href="#step1">Find Video</a></li>
+        <li><a href="#step2">Share Button</a></li>
+        <li><a href="#step3">Select Embed</a></li>
+        <li><a href="#step4">Copy Code</a></li>
+        <li><a href="#step5">Paste HTML</a></li>
+        <li><a href="#step6">Example Video</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content" class="container">
+    <section id="step1" class="step fade-in">
+      <h2>Step 1: Find Your Desired YouTube Video</h2>
+      <p>Go to <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a> and find the video you want to embed. Choose a video that is publicly available and appropriate for embedding.</p>
+      <img src="images/step1.png" alt="Screenshot showing the YouTube video page with search results, indicating where to find a video." loading="lazy"/>
+    </section>
+
+    <section id="step2" class="step fade-in">
+      <h2>Step 2: Click the "Share" Button</h2>
+      <p>Below the video player, click the **Share** button. A popup will appear with sharing options.</p>
+      <img src="images/step2.png" alt="Screenshot highlighting the 'Share' button located beneath a YouTube video." loading="lazy"/>
+    </section>
+
+    <section id="step3" class="step fade-in">
+      <h2>Step 3: Select "Embed"</h2>
+      <p>In the popup, click on the **Embed** option. This will open a window with HTML embed code.</p>
+      <img src="images/step3.png" alt="Screenshot showing the share pop-up with the 'Embed' option clearly selected." loading="lazy"/>
+    </section>
+
+    <section id="step4" class="step fade-in">
+      <h2>Step 4: Copy the Embed Code</h2>
+      <p>Click the **Copy** button next to the code. This code can now be pasted into your website's HTML.</p>
+      <img src="images/step4.png" alt="Screenshot of the embed code window, with the 'Copy' button highlighted for easy selection." loading="lazy"/>
+    </section>
+
+    <section id="step5" class="step fade-in">
+      <h2>Step 5: Paste Code into Your HTML File</h2>
+      <p>Open your HTML file in a text editor (e.g., VS Code or Notepad++) and paste the code where you want the video to appear.</p>
+      <pre><code>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+      <p>Please replace `YOUR_VIDEO_ID` in the `src` attribute with the actual ID of your YouTube video.</p>
+      <img src="images/step5.png" alt="Screenshot of the code in a text editor." loading="lazy"/>
+    </section>
+
+    <section id="step6" class="step fade-in">
+      <h2>Step 6: Example Embedded Video</h2>
+      <p>This is the actual video embedded from the steps above:</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xopvkx6CpNs?si=vpq53xonMzbLb6aw" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Created with ❤️ by Burledianu Daria — © 2025</p>
+      <p><a href="#top" aria-label="Back to top of the page">Back to Top</a></p>
+    </div>
+  </footer>
+</body>
+</html>
